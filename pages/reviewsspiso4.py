@@ -2,13 +2,13 @@ from itertools import count
 from selenium.webdriver.common.by import By
 from time import sleep
 
-class NewsSpiso4:
+class ReviewsSpiso4:
 
     def __init__(self, browser):
         self.browser = browser
 
     def open(self):
-        self.browser.get('https://m.sport-express.ru/news/')
+        self.browser.get('https://m.sport-express.ru/reviews/')
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'Весь спорт.')]")
@@ -19,18 +19,18 @@ class NewsSpiso4:
     def knopki1(self):
         knopki1 = self.browser.find_element(By.XPATH,"//a[contains(text(),'Главные')]")
         knopki1.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/news/?isEditorialChoice=1', "Не правильная главная"
+        assert self.browser.current_url == 'https://m.sport-express.ru/reviews/?isEditorialChoice=1', "Не правильная главная"
 
     def knopki2(self):
         knopki2 = self.browser.find_element(By.XPATH, "//a[contains(text(),'Выбор читателей')]")
         knopki2.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/news/?isHot=1', "Не правильный выбор читателей"
+        assert self.browser.current_url == 'https://m.sport-express.ru/reviews/?isHot=1', "Не правильный выбор читателей"
 
     def knopki3(self):
         knopki3 = self.browser.find_element(By.XPATH, "//a[@class='se-button se-material-list-filter__button se-material-list-filter__button--exclusive se-button--size-middle']")
         knopki3.click()
         sleep(5)
-        assert self.browser.current_url == 'https://m.sport-express.ru/news/?isExclusive=1', "Не правильный эксклюзив"
+        assert self.browser.current_url == 'https://m.sport-express.ru/reviews/?isExclusive=1', "Не правильный эксклюзив"
 
     def vid_sport(self):
         vid_sport = self.browser.find_element(By.XPATH,"//div[@class='se-material-filter-menu']")
@@ -52,20 +52,20 @@ class NewsSpiso4:
         assert self.browser.current_url == 'https://m.sport-express.ru/subscribe/', "Не правильная подписка"
         self.browser.back()
 
-    def k_football(self):
-        k_football = self.browser.find_element(By.XPATH,"//a[contains(@class,'se-material-filter-menu__item-button')][contains(text(),'Футбол')]")
-        k_football.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/football/news/', "Не правильный футбол"
+    def k_hockey(self):
+        k_hockey = self.browser.find_element(By.XPATH,"//a[contains(@class,'se-material-filter-menu__item-button')][contains(text(),'Хоккей')]")
+        k_hockey.click()
+        assert self.browser.current_url == 'https://m.sport-express.ru/hockey/reviews/', "Не правильный хоккей]"
 
     def selector(self):
         selector = self.browser.find_element(By.XPATH,"//div[@class='se-select__value-container']")
         selector.click()
 
-    def rpl(self):
-        rpl = self.browser.find_element(By.XPATH,"//div[3]//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]//div[1]//div[2]//div[1]//div[1]//div[1]//div[1]//div[3]")
-        rpl.click()
+    def kxl(self):
+        kxl = self.browser.find_element(By.XPATH,"//div[@class='se-select__items']//div[2]")
+        kxl.click()
         sleep(4)
-        assert self.browser.current_url == 'https://m.sport-express.ru/football/rfpl/news/', "Не правильный РПЛ"
+        assert self.browser.current_url == 'https://m.sport-express.ru/hockey/khl/reviews/', "Не правильный КХЛ"
 
     def scroll(self):
         scroll = self.browser.find_element(By.XPATH, "//div[@class='swiper-slide swiper-slide-active']//a[@class='se-button se-newspaper-widget__button-subscription se-button--size-big'][contains(text(),'Подписка 2025')]")
