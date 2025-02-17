@@ -3,7 +3,7 @@ import time
 from pages.mchok import MChock
 
 
-def test_detal_poll(browser):
+def test_mc_hook(browser):
     mc_hoc = MChock(browser)
     mc_hoc.open()
     mc_hoc.h1()

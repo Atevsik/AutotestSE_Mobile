@@ -6,7 +6,7 @@ from pages.mc import MC
 
 
 
-def test_detal_poll(browser):
+def test_mc(browser):
     mc = MC(browser)
     mc.open()
     mc.h1()
