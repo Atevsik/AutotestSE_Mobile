@@ -15,3 +15,5 @@ def test_mma_rait(browser):
     rait.h3()
     rait.boets()
     rait.champion()
+    rait.jen()
+    rait.vala()

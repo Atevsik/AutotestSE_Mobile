@@ -42,5 +42,14 @@ class MMAraiting:
         ves = self.browser.find_element(By.XPATH,"//div[@class='se-page-filter sp-ratings-filter__item']//div[@class='se-select__items']//div[2]")
         ves.click()
 
+    def jen(self):
+        jen = self.browser.find_element(By.XPATH,"//div[@class='se-buttons-toggle-item']")
+        jen.click()
+        assert self.browser.current_url == 'https://m.sport-express.ru/fighting/mma/ufc/2024/ratings/women/', "Не правилный вумен"
+
+    def vala(self):
+        vala = self.browser.find_element(By.XPATH,"//a[contains(text(),'Валентина Шевченко')]")
+        vala.click()
+        assert self.browser.current_url == 'https://m.sport-express.ru/tag/valentina-shevchenko-mma-25327/', "Не правильная валя "
 
 
