@@ -10,6 +10,7 @@ class Games:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/games/')
+        sleep(6)
         sleep(5)
 
     def logo(self):

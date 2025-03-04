@@ -9,6 +9,7 @@ class MmaMC:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/live/mma/ufc/')
+        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//div[@class='sp-sport-page__title']")

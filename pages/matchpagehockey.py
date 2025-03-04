@@ -9,6 +9,7 @@ class MatchHock:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/hockey/L/matchcenter/116730/')
+        sleep(6)
 
     def header(self):
         header = self.browser.find_element(By.XPATH,"//div[@class='se-header-mob__inner-stripe']")

@@ -9,6 +9,7 @@ class World:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/hockey/world/')
+        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'Чемпионат мира по хоккею 2024')]")
@@ -29,6 +30,7 @@ class World:
         dop_menu2 = self.browser.find_element(By.XPATH,"//div[@class='se-page-filters__button']//span//*[name()='svg']")
         dop_menu2.click()
         self.browser.get('https://m.sport-express.ru/hockey/L/world/2024/statistic/')
+        sleep(6)
 
     def info(self,count):
         info = self.browser.find_elements(By.XPATH,"//td[@class='se-advanced-table-cell']")

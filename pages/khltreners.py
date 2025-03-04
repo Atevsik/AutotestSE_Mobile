@@ -9,6 +9,7 @@ class Treners:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/hockey/L/khl/2023-2024/trainers/')
+        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'FONBET Чемпионат КХЛ. Тренеры')]")

@@ -9,6 +9,7 @@ class Podpis:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/subscribe/')
+        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h2[contains(text(),'-')]")

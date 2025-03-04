@@ -9,6 +9,7 @@ class FootballGlavn:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/football/')
+        sleep(6)
 
     def header(self):
         header = self.browser.find_element(By.XPATH,"//div[@class='se-header-mob__inner-stripe']")

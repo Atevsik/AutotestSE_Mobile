@@ -9,6 +9,7 @@ class DetalReviews:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/hockey/nhl/reviews/biografiya-ueyna-gretcki-zhizn-i-sportivnaya-karera-legendarnogo-kanadskogo-hokkeista-i-trenera-2174095/')
+        sleep(6)
 
     def tablo(self):
         tablo = self.browser.find_element(By.XPATH,"//div[@class='se-translation-scoreboard__events']")

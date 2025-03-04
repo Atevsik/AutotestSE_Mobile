@@ -9,6 +9,7 @@ class Brend:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/brend-centr/?showforever')
+        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h1[@class='se-sub-header__title']")
