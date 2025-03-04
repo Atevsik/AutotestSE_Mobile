@@ -6,7 +6,7 @@ import time
 from pages.lednikkybok import FigyrkaKybok
 
 
-def test_mma_lij_kybok(browser):
+def test_lij_kybok(browser):
     lij_kubok = FigyrkaKybok(browser)
     lij_kubok.open()
     lij_kubok.h1()

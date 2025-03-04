@@ -6,7 +6,7 @@ from pages.figyrkacalend import FigyrkaCalend
 
 
 
-def test_mma_figyrka_calend(browser):
+def test_figyrka_calend(browser):
     fig_calend = FigyrkaCalend(browser)
     fig_calend.open()
     fig_calend.h1()

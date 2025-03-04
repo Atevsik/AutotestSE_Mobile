@@ -4,7 +4,7 @@ import time
 from pages.figyrkamedal import FigyrkaMeadal
 
 
-def test_mma_figyrka_medal(browser):
+def test_figyrka_medal(browser):
     fig_medal = FigyrkaMeadal(browser)
     fig_medal.open()
     fig_medal.h1()

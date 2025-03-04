@@ -5,7 +5,7 @@ from pages.figyrkacomand import FigyrkaComand
 
 
 
-def test_mma_figyrka_comand(browser):
+def test_figyrka_comand(browser):
     fig_comand = FigyrkaComand(browser)
     fig_comand.open()
     fig_comand.h1()

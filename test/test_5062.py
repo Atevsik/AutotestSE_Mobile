@@ -5,7 +5,7 @@ from pages.figyrkagranpri import FigyrkaGranPri
 
 
 
-def test_mma_figyrka_gran_pri(browser):
+def test_figyrka_gran_pri(browser):
     fig = FigyrkaGranPri(browser)
     fig.open()
     fig.h1()

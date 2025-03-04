@@ -5,7 +5,7 @@ import time
 from pages.figyrkasports import FigyrkaSportsmn
 
 
-def test_mma_figyrka_sportsmn(browser):
+def test_figyrka_sportsmn(browser):
     fig_sportsmn = FigyrkaSportsmn(browser)
     fig_sportsmn.open()
     fig_sportsmn.h1()

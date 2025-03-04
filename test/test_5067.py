@@ -5,7 +5,7 @@ import time
 from pages.figyrkamaterials import FigyrkaNews
 
 
-def test_mma_figyrka_news(browser):
+def test_figyrka_news(browser):
     fig_news = FigyrkaNews(browser)
     fig_news.open()
     fig_news.h1()
