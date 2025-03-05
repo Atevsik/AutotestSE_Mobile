@@ -9,7 +9,6 @@ class FootballGlavn:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/football/')
-        sleep(6)
 
     def header(self):
         header = self.browser.find_element(By.XPATH,"//div[@class='se-header-mob__inner-stripe']")
@@ -48,7 +47,6 @@ class FootballGlavn:
         photo_click.click()
         assert self.browser.current_url == 'https://m.sport-express.ru/football/photoreports/', "Не правильное фото"
         self.browser.back()
-        sleep(6)
 
     def gazeta(self):
         gazeta = self.browser.find_element(By.XPATH, "//section[@class='se-titled-block mb_20']")

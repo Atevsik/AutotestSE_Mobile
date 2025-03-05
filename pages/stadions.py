@@ -9,7 +9,6 @@ class Stadions:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/hockey/L/khl/2023-2024/stadiums/')
-        sleep(6)
 
     def dopmenu(self):
         dopmenu = self.browser.find_element(By.XPATH, "//div[@class='se-subpopup-menu__button']")

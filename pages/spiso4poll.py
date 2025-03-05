@@ -9,7 +9,6 @@ class Spiso4Online:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/poll/')
-        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'Видео')]")

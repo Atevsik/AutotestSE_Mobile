@@ -9,7 +9,6 @@ class TagPlayer:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/tag/valeriy-karpin-135/')
-        sleep(6)
 
     def info(self):
         info = self.browser.find_element(By.XPATH,"//td[contains(text(),'2 февраля 1969')]")

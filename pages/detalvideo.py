@@ -9,7 +9,6 @@ class DetalVideo:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/video/den-s-alekseem-shevchenko/videoreports/sibir-vse-dalshe-ot-pley-off-u-salavata-yulaeva-zablokirovali-scheta-den-s-alekseem-shevchenko-31-yanvarya-2024-2174072/')
-        sleep(6)
 
     def header(self):
         header = self.browser.find_element(By.XPATH, "//div[@class='se-header-mob__inner-stripe']")

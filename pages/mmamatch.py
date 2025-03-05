@@ -9,7 +9,6 @@ class MmaMatch:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/tag/hoakin-bakli-25917/')
-        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//div[@class='sp-profile-name__name']")

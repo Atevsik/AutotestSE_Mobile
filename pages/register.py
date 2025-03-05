@@ -11,7 +11,6 @@ class Register:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/registration/')
-        sleep(6)
         sleep(5)
 
     def h1(self):

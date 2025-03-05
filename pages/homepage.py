@@ -9,7 +9,6 @@ class HomePage:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/')
-        sleep(6)
 
     def knopki_menu(self):
         knopki_menu = self.browser.find_element(By.XPATH,"//div[@class='se-header-mob__right']")
@@ -52,7 +51,6 @@ class HomePage:
         photo_click.click()
         assert self.browser.current_url == 'https://m.sport-express.ru/photoreports/', "Не правильное фото"
         self.browser.back()
-        sleep(6)
 
     def gazeta(self):
         gazeta = self.browser.find_element(By.XPATH,"//section[@class='se-titled-block mb_20']")
@@ -73,7 +71,6 @@ class HomePage:
     def knoka_podval1(self):
         knopka_podval1 = self.browser.find_element(By.XPATH,"//a[contains(text(),'Редакция')]")
         knopka_podval1.click()
-        sleep(6)
         assert self.browser.current_url == 'https://m.sport-express.ru/editorial/',"Не правильная редакция"
         self.browser.back()
 

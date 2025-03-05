@@ -9,7 +9,6 @@ class Golshak:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/golyshak-vspominaet/')
-        sleep(6)
 
     def header(self):
         self.browser.find_element(By.XPATH,"//div[@class='se-header-mob__inner-stripe']")

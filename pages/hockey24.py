@@ -9,7 +9,6 @@ class Hock24:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/hockey/world-u20/')
-        sleep(6)
 
     def h1(self):
         self.browser.find_element(By.XPATH,"//h1[contains(text(),'Молодежный чемпионат мира по хоккею 2025')]")

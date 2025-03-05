@@ -10,7 +10,6 @@ class FigyrkaGranPri:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/figure-skating/grand-pri-rossii/')
-        sleep(6)
         sleep(5)
 
     def h1(self):

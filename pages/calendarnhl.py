@@ -9,7 +9,6 @@ class CalendNhl:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/hockey/nhl/')
-        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'НХЛ 2024 - 2025')]")

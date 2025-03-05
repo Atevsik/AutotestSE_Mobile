@@ -10,7 +10,6 @@ class MmaMatchPage:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/live/mma/ufc/event-14640/')
-        sleep(6)
         sleep(5)
 
     def h1(self):

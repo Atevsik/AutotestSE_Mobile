@@ -9,7 +9,6 @@ class NhlTable:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/hockey/nhl/')
-        sleep(6)
 
     def dop_menu(self):
         dop_menu = self.browser.find_element(By.XPATH,"//div[@class='se-subpopup-menu__button']")

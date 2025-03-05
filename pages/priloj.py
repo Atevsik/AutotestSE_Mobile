@@ -9,7 +9,6 @@ class Priloj:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/projects/apps/')
-        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h2[contains(text(),'Официальное мобильное приложение «Спорт-Экспресс» ')]")

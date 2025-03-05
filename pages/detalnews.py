@@ -9,7 +9,6 @@ class DetalNews:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/basketball/vtb-league/news/bratya-kulaginy-voroncevich-lopatin-hill-i-hemmonds-popali-na-match-zvezd-edinoy-ligi-vtb-2024-2174153/')
-        sleep(6)
 
     def tablo(self):
         tablo = self.browser.find_element(By.XPATH,"//div[@class='se-translation-scoreboard__events']")
