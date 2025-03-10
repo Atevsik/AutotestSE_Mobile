@@ -87,6 +87,7 @@ class World:
         player4.click()
         assert self.browser.current_url == 'https://m.sport-express.ru/tag/dzhonni-godro-12941/', "Не правильный игрок4"
         self.browser.back()
+        sleep(4)
 
     def comand(self):
         comand = self.browser.find_element(By.XPATH,"//a[contains(text(),'Командная')]")

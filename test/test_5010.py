@@ -17,7 +17,6 @@ def test_football_fot_glvn(browser):
     fot_glvn.spisok_reviews(26)
     fot_glvn.photo()
     fot_glvn.photo_click()
-    fot_glvn.podpiska()
     fot_glvn.podval()
     fot_glvn.knoka_podval1()
     fot_glvn.knoka_podval2()

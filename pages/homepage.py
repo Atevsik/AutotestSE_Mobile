@@ -55,6 +55,11 @@ class HomePage:
     def gazeta(self):
         gazeta = self.browser.find_element(By.XPATH,"//section[@class='se-titled-block mb_20']")
 
+    def scroll(self):
+            scroll = self.browser.find_element(By.XPATH, "//footer[@class='se-footer']")
+            scroll = self.browser.execute_script("arguments[0].scrollIntoView();", scroll)
+            sleep(5)
+
     def podpiska(self):
         podpiska = self.browser.find_element(By.XPATH,"//div[@class='swiper-slide swiper-slide-active']//a[@class='se-button se-newspaper-widget__button-subscription se-button--size-big'][contains(text(),'Подписка 2025')]")
         podpiska.click()
@@ -71,6 +76,7 @@ class HomePage:
     def knoka_podval1(self):
         knopka_podval1 = self.browser.find_element(By.XPATH,"//a[contains(text(),'Редакция')]")
         knopka_podval1.click()
+        sleep(5)
         assert self.browser.current_url == 'https://m.sport-express.ru/editorial/',"Не правильная редакция"
         self.browser.back()
 

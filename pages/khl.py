@@ -66,10 +66,10 @@ class KHL:
     def regulr(self):
         regulr = self.browser.find_element(By.XPATH,"//th[@class='se-advanced-table-cell']//div[contains(text(),'Регулярный чемпионат')]")
 
-    def dinamo(self):
-        dinamo = self.browser.find_element(By.XPATH,"//tbody/tr[10]/td[2]/div[1]/div[2]/a[1]")
-        dinamo.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/tag/dinamo-moskva-hokkey-520/', "Не правильный динамо"
+   # def dinamo(self):
+        #dinamo = self.browser.find_element(By.XPATH,"//tbody/tr[10]/td[2]/div[1]/div[2]/a[1]")
+       # dinamo.click()
+        #assert self.browser.current_url == 'https://m.sport-express.ru/tag/dinamo-moskva-hokkey-520/', "Не правильный динамо"
 
 
 

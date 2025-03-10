@@ -17,6 +17,7 @@ def test_glavn_se(browser):
     glavn.spisok_reviews(26)
     glavn.photo()
     glavn.photo_click()
+    glavn.scroll()
     glavn.podpiska()
     glavn.opros_teg(2)
     glavn.podval()

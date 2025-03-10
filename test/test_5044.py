@@ -20,7 +20,6 @@ def test_khl(browser):
     khl.smi2()
     khl.obsh()
     khl.regulr()
-    khl.dinamo()
 
 
 

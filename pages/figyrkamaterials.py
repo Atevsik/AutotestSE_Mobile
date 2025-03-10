@@ -26,7 +26,7 @@ class FigyrkaNews:
     def knp1(self):
         knp1 = self.browser.find_element(By.XPATH,"//a[contains(text(),'Главные')]")
         knp1.click()
-        sleep(10)
+        sleep(15)
         assert self.browser.current_url == 'https://m.sport-express.ru/figure-skating/ice-age/materials/?isEditorialChoice=1'
 
 

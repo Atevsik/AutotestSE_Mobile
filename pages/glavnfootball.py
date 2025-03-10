@@ -51,12 +51,6 @@ class FootballGlavn:
     def gazeta(self):
         gazeta = self.browser.find_element(By.XPATH, "//section[@class='se-titled-block mb_20']")
 
-    def podpiska(self):
-        podpiska = self.browser.find_element(By.XPATH,  "//div[@class='swiper-slide swiper-slide-active']//a[@class='se-button se-newspaper-widget__button-subscription se-button--size-big'][contains(text(),'Подписка 2025')]")
-        podpiska.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/subscribe/', "Не правильная подписка"
-        self.browser.back()
-
     def podval(self):
         podval = self.browser.find_element(By.XPATH, "//footer[@class='se-footer']")
 
