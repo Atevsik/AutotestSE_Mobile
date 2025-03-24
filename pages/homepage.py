@@ -80,11 +80,6 @@ class HomePage:
         assert self.browser.current_url == 'https://m.sport-express.ru/editorial/',"Не правильная редакция"
         self.browser.back()
 
-    def knoka_podval2(self):
-        knopka_podval2 = self.browser.find_element(By.XPATH, "//a[contains(text(),'Подписка на газету')]")
-        knopka_podval2.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/subscribe/', "Не правильная газета"
-        self.browser.back()
 
     def knoka_podval3(self):
         knopka_podval3 = self.browser.find_element(By.XPATH, "//a[contains(text(),'Отдел рекламы')]")

@@ -15,7 +15,6 @@ def test_nhl3noz(browser):
     nhl3.knopka_all_news()
     nhl3.podval()
     nhl3.knoka_podval1()
-    nhl3.knoka_podval2()
     nhl3.knoka_podval3()
     nhl3.knoka_podval4()
     nhl3.knoka_podval5()

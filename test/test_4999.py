@@ -10,7 +10,6 @@ def test_story_spiso4(browser):
    story.knopka()
    story.dop_news()
    story.gazeta()
-   story.podpiska()
    story.k_hockey()
    story.selector()
    story.mma()

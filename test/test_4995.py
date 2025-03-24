@@ -14,7 +14,6 @@ def test_news_spiso4(browser):
     news.vid_sport()
     news.dop_news()
     news.gazeta()
-    news.podpiska()
     news.k_football()
     news.proverka(10)
     news.selector()

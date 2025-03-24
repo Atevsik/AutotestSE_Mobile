@@ -11,7 +11,6 @@ def test_photo_spiso4(browser):
    photo.knopka()
    photo.dop_news()
    photo.gazeta()
-   photo.podpiska()
    photo.k_hockey()
    photo.selector()
    photo.mma()

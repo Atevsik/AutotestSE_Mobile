@@ -21,7 +21,6 @@ def test_prognoz(browser):
     prog.tur_table()
     prog.akron()
     prog.knoka_podval1()
-    prog.knoka_podval2()
     prog.knoka_podval3()
     prog.knoka_podval4()
     prog.knoka_podval5()

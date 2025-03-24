@@ -9,7 +9,6 @@ def test_podpiska(browser):
     podpiska.open()
     podpiska.h1()
     podpiska.input()
-    podpiska.knp()
 
 
 

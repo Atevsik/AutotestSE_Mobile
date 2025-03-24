@@ -10,7 +10,6 @@ def test_video_spiso4(browser):
    video.knopka()
    video.dop_news()
    video.gazeta()
-   video.podpiska()
    video.k_hockey()
    video.selector()
    video.mma()

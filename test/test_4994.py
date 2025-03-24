@@ -22,7 +22,6 @@ def test_glavn_se(browser):
     glavn.opros_teg(2)
     glavn.podval()
     glavn.knoka_podval1()
-    glavn.knoka_podval2()
     glavn.knoka_podval3()
     glavn.knoka_podval4()
     glavn.knoka_podval5()

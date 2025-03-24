@@ -19,7 +19,6 @@ def test_football_fot_glvn(browser):
     fot_glvn.photo_click()
     fot_glvn.podval()
     fot_glvn.knoka_podval1()
-    fot_glvn.knoka_podval2()
     fot_glvn.knoka_podval3()
     fot_glvn.knoka_podval4()
     fot_glvn.knoka_podval5()

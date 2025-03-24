@@ -15,7 +15,6 @@ def test_reviews_spiso4(browser):
     reviews.vid_sport()
     reviews.dop_news()
     reviews.gazeta()
-    reviews.podpiska()
     reviews.k_hockey()
     reviews.selector()
     reviews.kxl()

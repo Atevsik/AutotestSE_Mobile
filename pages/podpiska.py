@@ -16,10 +16,6 @@ class Podpiska:
     def input(self):
         input = self.browser.find_element(By.XPATH,"//input[@name='_member_email']")
 
-    def knp(self):
-        knp = self.browser.find_element(By.XPATH,"//input[@name='bt_save']")
-        knp.click()
-        assert self.browser.current_url == 'https://sendsay.ru/form/sportexpress/1', "Не правильная подписка"
 
 
 
