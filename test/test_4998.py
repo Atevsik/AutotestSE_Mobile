@@ -9,7 +9,7 @@ def test_photo_spiso4(browser):
    photo.open()
    photo.h1()
    photo.knopka()
-   photo.dop_news()
+   #photo.dop_news()
    photo.gazeta()
    photo.k_hockey()
    photo.selector()

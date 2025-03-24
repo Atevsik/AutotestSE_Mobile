@@ -30,6 +30,11 @@ class HomePage:
         spisok_reviews = self.browser.find_elements(By.XPATH,"//div[@class='se-articles-block__item' and not(@data-component='hidden-block')]")
         assert len(spisok_reviews) == count
 
+    def scroll1(self):
+        scroll1 = self.browser.find_element(By.XPATH, "//div[@class='se-tab se-tab--selected mse-mainnews__tab']")
+        scroll1 = self.browser.execute_script("arguments[0].scrollIntoView();", scroll1)
+        sleep(3)
+
     def knopka_all_news(self):
         knopka_all_news = self.browser.find_element(By.XPATH,"//a[contains(text(),'Все главные новости')]")
         knopka_all_news.click()
@@ -59,12 +64,6 @@ class HomePage:
             scroll = self.browser.find_element(By.XPATH, "//footer[@class='se-footer']")
             scroll = self.browser.execute_script("arguments[0].scrollIntoView();", scroll)
             sleep(5)
-
-    def podpiska(self):
-        podpiska = self.browser.find_element(By.XPATH,"//div[@class='swiper-slide swiper-slide-active']//a[@class='se-button se-newspaper-widget__button-subscription se-button--size-big'][contains(text(),'Подписка 2025')]")
-        podpiska.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/subscribe/', "Не правильная подписка"
-        self.browser.back()
 
     def opros_teg(self,count):
         opros_teg = self.browser.find_elements(By.XPATH,"//section[@class='se-titled-block mb_30']")

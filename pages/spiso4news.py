@@ -38,16 +38,14 @@ class NewsSpiso4:
     def dop_news(self):
         dop_news = self.browser.find_element(By.XPATH,"//a[contains(text(),'Показать еще')]")
         dop_news.click()
+        sleep(3)
 
     def proverka(self,count):
         proverka = self.browser.find_elements(By.XPATH,"//div[@class='se-news-list-page__item-right']")
         assert len(proverka) == count
 
-    def gazeta(self):
-        gazeta = self.browser.find_element(By.XPATH, "//section[@class='se-titled-block mb_20']")
-
     def k_football(self):
-        k_football = self.browser.find_element(By.XPATH,"//a[contains(@class,'se-material-filter-menu__item-button')][contains(text(),'Футбол')]")
+        k_football = self.browser.find_element(By.CSS_SELECTOR,"a[href='/football/news/']")
         k_football.click()
         assert self.browser.current_url == 'https://m.sport-express.ru/football/news/', "Не правильный футбол"
 
@@ -62,7 +60,7 @@ class NewsSpiso4:
         assert self.browser.current_url == 'https://m.sport-express.ru/football/rfpl/news/', "Не правильный РПЛ"
 
     def scroll(self):
-        scroll = self.browser.find_element(By.XPATH, "//div[@class='swiper-slide swiper-slide-active']//a[@class='se-button se-newspaper-widget__button-subscription se-button--size-big'][contains(text(),'Подписка 2025')]")
+        scroll = self.browser.find_element(By.XPATH, "//footer[@class='se-footer']//div[@class='se-center-wrapper']")
         scroll = self.browser.execute_script("arguments[0].scrollIntoView();", scroll)
         sleep(5)
 

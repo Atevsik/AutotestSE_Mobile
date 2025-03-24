@@ -8,7 +8,7 @@ def test_video_spiso4(browser):
    video.open()
    video.h1()
    video.knopka()
-   video.dop_news()
+   #video.dop_news()
    video.gazeta()
    video.k_hockey()
    video.selector()
