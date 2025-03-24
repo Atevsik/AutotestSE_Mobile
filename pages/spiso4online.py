@@ -25,7 +25,7 @@ class Spiso4Online:
 
     def gazeta(self):
         gazeta = self.browser.find_element(By.XPATH, "//section[@class='se-titled-block mb_20']")
-        sleep(3)
+        sleep(5)
 
     def k_hockey(self):
         k_hockey = self.browser.find_element(By.XPATH,"//a[contains(@class,'se-material-filter-menu__item-button')][contains(text(),'Баскетбол')]")

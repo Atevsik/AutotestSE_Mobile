@@ -9,6 +9,7 @@ class DetalReviews:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/hockey/nhl/reviews/biografiya-ueyna-gretcki-zhizn-i-sportivnaya-karera-legendarnogo-kanadskogo-hokkeista-i-trenera-2174095/')
+        sleep(3)
 
     def tablo(self):
         tablo = self.browser.find_element(By.XPATH,"//div[@class='se-translation-scoreboard__events']")
@@ -19,12 +20,14 @@ class DetalReviews:
     def autor(self):
         autor = self.browser.find_element(By.XPATH,"//a[contains(text(),'Анастасия Рацкевич')]")
         autor.click()
+        sleep(4)
         assert self.browser.current_url == 'https://m.sport-express.ru/author/anastasia-ratzkevitch/', "Не правильный автор"
         self.browser.back()
 
     def podelit(self):
         podelit = self.browser.find_element(By.XPATH,"//div[@class='se-shareblock__icon']//*[name()='svg']")
         podelit.click()
+        sleep(4)
 
     def podel_knop(self,count):
         podel_knop = self.browser.find_elements(By.XPATH,"//button[@class='react-share__ShareButton']")
