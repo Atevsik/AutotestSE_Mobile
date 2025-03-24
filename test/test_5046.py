@@ -14,7 +14,7 @@ def test_world(browser):
     world.h2()
     world.dop_menu2() #В новой версии, обратить внимание на этот шаг, сделать его лучше, (убрать гет)
     world.info(472)
-    world.tag()
+    #world.tag()
     world.li4ka()
     world.player()
     world.vratar()

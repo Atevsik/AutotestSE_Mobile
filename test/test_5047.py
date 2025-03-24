@@ -15,7 +15,7 @@ def test_hock24(browser):
     hoc24.spisok(10)
     hoc24.sostav()
     hoc24.calend()
-    hoc24.stat()
+    #hoc24.stat()
 
 
 

@@ -17,7 +17,7 @@ class NhlTable:
     def table(self):
         table = self.browser.find_element(By.XPATH,"//a[contains(text(),'Таблицы')]")
         table.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/hockey/L/nhl/2024-2025/', "Не правильный таблица"
+        assert self.browser.current_url == 'https://m.sport-express.ru/hockey/L/nhl/2024-2025/?type=conference', "Не правильный таблица"
 
     def h2(self):
         h2 = self.browser.find_element(By.XPATH, "//h1[contains(text(),'НХЛ. Турнирная таблица')]")

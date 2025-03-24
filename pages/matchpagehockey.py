@@ -25,15 +25,13 @@ class MatchHock:
         assert self.browser.current_url == 'https://m.sport-express.ru/tag/metallurg-mg-hokkey-270/'
         self.browser.back()
 
-    def book(self):
-        book = self.browser.find_element(By.XPATH,"//div[@class='sp-matchcenter-board__bookies']")
-
     def seria(self):
         seria = self.browser.find_element(By.XPATH,"//div[@class='sp-mc-playoff-stage']//div[@class='se-titled-block se-titled-block--bg-white se-titled-block--align-center']")
 
     def seria_click(self):
         seria_click = self.browser.find_element(By.XPATH,"//tbody/tr/td[6]/a[1]/div[1]/div[1]/div[1]")
         seria_click.click()
+        sleep(11111)
         assert self.browser.current_url == 'https://m.sport-express.ru/hockey/L/matchcenter/116731/', "Не правильная серия"
         self.browser.back()
 
