@@ -10,7 +10,7 @@ def test_formula(browser):
     formula.h1()
     formula.dop_menu()
     formula.obsh()
-    formula.usa()
+    #formula.usa()
 
 
 

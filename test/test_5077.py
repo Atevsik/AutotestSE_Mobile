@@ -5,7 +5,7 @@ from pages.devis import Devis
 
 
 
-
+# Иногда валится, запустить если что повторно
 def test_devis(browser):
    devis = Devis(browser)
    devis.open()

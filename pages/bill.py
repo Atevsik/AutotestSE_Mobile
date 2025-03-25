@@ -10,6 +10,7 @@ class Bill:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/tennis/fedcup/')
+        sleep(4)
 
 
     def h1(self):
