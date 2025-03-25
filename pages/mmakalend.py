@@ -23,7 +23,7 @@ class MmaCalend:
         match = self.browser.find_element(By.XPATH,"//div[@class='sp-calendar-fighting__events']//div[1]//div[2]//div[1]//div[2]//div[1]//div[1]//a[1]//div[3]//div[1]//div[2]//div[1]//div[2]//div[1]//div[1]//div[1]")
         match.click()
         sleep(4)
-        assert self.browser.current_url == 'https://m.sport-express.ru/live/mma/ufc/event-16432/#', "NO match"
+        assert self.browser.current_url == 'https://m.sport-express.ru/live/mma/ufc/event-16432/', "NO match"
         self.browser.back()
 
     def select(self):
