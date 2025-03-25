@@ -3,7 +3,7 @@ import time
 
 from pages.figyrkamedal import FigyrkaMeadal
 
-
+# Иногда валится, если что включить повторно
 def test_figyrka_medal(browser):
     fig_medal = FigyrkaMeadal(browser)
     fig_medal.open()

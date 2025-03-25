@@ -30,6 +30,7 @@ class FigyrkaMeadal:
     def god(self):
         god = self.browser.find_element(By.XPATH,"//div[@class='se-sport-navigator__season']")
         god.click()
+        sleep(4)
 
     def v2024(self):
         v2024 = self.browser.find_element(By.XPATH,"//div[@id='react-select-seasons-option-0-1']")

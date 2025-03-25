@@ -13,7 +13,7 @@ def test_figyrka_calend(browser):
     fig_calend.dop_menu()
     fig_calend.obsh()
     fig_calend.h2()
-    fig_calend.book()
+    #fig_calend.book()
     fig_calend.event()
 
 

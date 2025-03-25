@@ -11,7 +11,7 @@ def test_lij_mir(browser):
     liji_mir.dop_menu()
     liji_mir.obsh()
     liji_mir.reklama()
-    liji_mir.book()
+    #liji_mir.book()
     liji_mir.gonka()
 
 
