@@ -9,6 +9,7 @@ class Spiso4Gazeta:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/newspaper/')
+        sleep(6)
 
     def knopki(self,count):
         knopki = self.browser.find_elements(By.XPATH,"//div[@class='se19-rubricator__group']")

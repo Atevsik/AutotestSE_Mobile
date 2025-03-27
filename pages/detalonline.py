@@ -9,6 +9,7 @@ class DetalOnline:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/football/england/online/liverpul-chelsi-smotret-besplatno-match-22-tura-apl-v-pryamom-efire-onlayn-tekstovaya-translyaciya-i-rezultat-31-yanvarya-2024-2173894/')
+        sleep(6)
 
     def header(self):
         header = self.browser.find_element(By.XPATH, "//div[@class='se-header-mob__inner-stripe']")

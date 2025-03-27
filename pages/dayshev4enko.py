@@ -9,6 +9,7 @@ class Shev4enko:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/video/den-s-alekseem-shevchenko/materials/')
+        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'Все материалы')]")

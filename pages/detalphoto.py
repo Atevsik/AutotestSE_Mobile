@@ -9,6 +9,7 @@ class DetalPhoto:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/football/asian-cup/photoreports/sbornaya-uzbekistana-pobedila-tailand-v-1-8-finala-kubka-azii-foto-30-yanvarya-2024-2173790/')
+        sleep(6)
 
     def header(self):
         header = self.browser.find_element(By.XPATH, "//div[@class='se-header-mob__inner-stripe']")

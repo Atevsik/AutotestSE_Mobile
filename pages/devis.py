@@ -10,6 +10,7 @@ class Devis:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/tennis/davis-cup/')
+        sleep(6)
 
 
     def h1(self):

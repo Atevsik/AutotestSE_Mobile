@@ -10,8 +10,8 @@ class Bill:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/tennis/fedcup/')
+        sleep(6)
         sleep(4)
-
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'Кубок Билли Джин Кинг')]")

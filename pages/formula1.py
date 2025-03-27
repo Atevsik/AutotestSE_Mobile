@@ -10,6 +10,7 @@ class Formula1:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/autosport/formula1/results/')
+        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//span[contains(text(),'Результаты')]")

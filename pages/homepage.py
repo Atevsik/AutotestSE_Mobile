@@ -9,6 +9,7 @@ class HomePage:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/')
+        sleep(6)
 
     def knopki_menu(self):
         knopki_menu = self.browser.find_element(By.XPATH,"//div[@class='se-header-mob__right']")

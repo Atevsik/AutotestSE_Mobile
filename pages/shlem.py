@@ -10,6 +10,7 @@ class Shlem :
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/tennis/grand-slam/')
+        sleep(6)
 
 
     def h1(self):

@@ -18,8 +18,10 @@ for root, _, files in os.walk("."):
                 new_content.append(line)
 
                 # Ищем строку с self.browser.get(<URL>)
-                if re.search(r"self\.browser\.get\(['\"](.+?)['\"]\)", line):
+                match = re.search(r"self\.browser\.get\(['\"](.+?)['\"]\)", line)
+                if match:
                     print(f"Found 'self.browser.get' in {path}")  # Печатаем, что нашли
+                    new_content.append("        sleep(6)\n")  # Добавляем sleep(6) с отступом
                     modified = True
 
             # Если нет импорта time, добавляем его в начало файла

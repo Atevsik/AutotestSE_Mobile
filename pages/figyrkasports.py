@@ -10,6 +10,7 @@ class FigyrkaSportsmn:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/winter/figure-skating/grand-pri/2022-2023/calendar/')
+        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//div[@class='sp-sport-page__title']")

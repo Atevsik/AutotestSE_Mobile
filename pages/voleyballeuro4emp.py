@@ -11,6 +11,7 @@ class VoleyballEuro4emp:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/volleyball/eurovolley/')
+        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'Чемпионат Европы по волейболу')]")

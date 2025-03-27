@@ -9,6 +9,7 @@ class MMAraiting:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/fighting/mma/ufc/2024/ratings/men/')
+        sleep(6)
 
     def dopmenu(self):
         dopmenu = self.browser.find_element(By.XPATH,"//div[@class='se-subpopup-menu__button']")

@@ -11,6 +11,7 @@ class Poisk:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/')
+        sleep(6)
 
     def menu(self):
         menu = self.browser.find_element(By.XPATH, "//div[@class='se-header-mob__item se-header-mob__item--burger']")

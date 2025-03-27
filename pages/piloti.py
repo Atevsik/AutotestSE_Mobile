@@ -11,6 +11,7 @@ class FormulaPilot:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/autosport/formula1/teams/')
+        sleep(6)
         sleep(4)
 
     def h1(self):

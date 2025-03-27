@@ -9,6 +9,7 @@ class TagComand:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/tag/spartak-futbol-514/')
+        sleep(6)
 
     def info(self):
         info = self.browser.find_element(By.XPATH,"//td[normalize-space()='1922']")

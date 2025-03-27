@@ -9,6 +9,7 @@ class DetalStory:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/obshchestvo/stories/rossiya-sankcii-na-olimpiade-i-chm-sorevnovaniya-v-rossii-i-vystuplenie-sbornoy-i-sportsmenov-dopingovyy-krizis-i-sudy-protiv-mok-i-vada-852911/')
+        sleep(6)
 
     def header(self):
         header = self.browser.find_element(By.XPATH, "//div[@class='se-header-mob__inner-stripe']")

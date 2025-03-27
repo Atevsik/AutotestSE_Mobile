@@ -10,6 +10,7 @@ class zpKHL:
 
     def open(self):
         self.browser.get('https://m.sport-express.ru/hockey/khl/money/2023-2024/')
+        sleep(6)
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//h1[@class='se-player-salaries-main-page__title']")
