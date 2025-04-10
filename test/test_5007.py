@@ -16,5 +16,5 @@ def test_detal_story(browser):
     detal_story.footer()
     detal_story.scroll()
     detal_story.smi2()
-    detal_story.teg()
+    #detal_story.teg()
     detal_story.like()

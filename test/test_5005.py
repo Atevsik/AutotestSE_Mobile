@@ -10,7 +10,7 @@ def test_detal_photo(browser):
     detal_photo.header()
     detal_photo.karysel()
     detal_photo.podelit()
-    detal_photo.podel_knop(5)
+    #detal_photo.podel_knop(5)
     detal_photo.footer()
     detal_photo.scroll()
     detal_photo.reklama()

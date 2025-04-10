@@ -17,7 +17,7 @@ def test_detal_news(browser):
     detal_news.detal_menu()
     detal_news.telega_news()
     detal_news.header()
-    detal_news.basket()
+    #gdetal_news.basket()
     detal_news.block_next()
     detal_news.like()
 

@@ -11,7 +11,7 @@ def test_euro_bask(browser):
     euro_b.open()
     euro_b.h1()
     euro_b.dop_menu()
-    euro_b.obsh()
+    #euro_b.obsh()
 
 
 

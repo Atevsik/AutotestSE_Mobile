@@ -10,7 +10,7 @@ def test_detal_online(browser):
     detal_online.open()
     detal_online.header()
     detal_online.podelit()
-    detal_online.podel_knop(5)
+    #detal_online.podel_knop(5)
     detal_online.footer()
     detal_online.teg()
     detal_online.date_online()

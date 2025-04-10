@@ -52,6 +52,11 @@ class HomePage:
     def photo(self):
         photo = self.browser.find_element(By.XPATH,"//div[@class='se-photo-reports']")
 
+    def scroll2(self):
+        scroll2 = self.browser.find_element(By.XPATH, "//h2[contains(text(),'Фото')]")
+        scroll2 = self.browser.execute_script("arguments[0].scrollIntoView();", scroll2)
+        sleep(3)
+
     def photo_click(self):
         photo_click = self.browser.find_element(By.XPATH,"//a[@class='se-button se-photo-reports__button-more se-button--size-big']")
         photo_click.click()
