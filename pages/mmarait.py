@@ -27,15 +27,6 @@ class MmaRait:
     def champion(self):
         champion = self.browser.find_element(By.XPATH,"//div[@class='se-fighter-champion-panel__inner']")
 
-    def women(self):
-        women = self.browser.find_element(By.XPATH,"//div[@class='se-buttons-toggle-item']")
-        women.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/fighting/mma/ufc/2024/ratings/women/', "No women"
-
-    def player(self):
-        player = self.browser.find_element(By.XPATH,"//a[contains(text(),'Манон Фиро')]")
-        player.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/tag/manon-firo-25322/', "No Player"
 
 
 

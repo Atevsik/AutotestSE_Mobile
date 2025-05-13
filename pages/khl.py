@@ -21,7 +21,7 @@ class KHL:
     def table(self):
         table = self.browser.find_element(By.XPATH,"//a[contains(text(),'Таблицы')]")
         table.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/hockey/L/khl/2024-2025/?type=division'
+        assert self.browser.current_url == 'https://m.sport-express.ru/hockey/L/khl/2024-2025/playoff/'
 
     def h2(self):
         h2 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'FONBET КХЛ. Турнирная таблица')]")

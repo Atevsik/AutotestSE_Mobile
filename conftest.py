@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 
 
-@pytest.fixture()
+@pytest.fixture(scope="session")
 def browser():
     options = Options()
     options.page_load_strategy = "eager"
