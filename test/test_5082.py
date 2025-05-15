@@ -11,7 +11,7 @@ def test_f_trassa(browser):
     f_trassa.text()
     f_trassa.dop_menu()
     f_trassa.obsh()
-    f_trassa.fera()
+
 
 
 

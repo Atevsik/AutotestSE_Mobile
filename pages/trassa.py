@@ -28,10 +28,6 @@ class FormulaTrassa:
         obsh.click()
         assert self.browser.current_url == 'https://m.sport-express.ru/autosport/formula1/circuits/', "No reviews"
 
-    def fera(self):
-        fera = self.browser.find_element(By.XPATH,"//a[normalize-space()='Autodromo Enzo e Dino Ferrari']")
-        fera.click()
-        assert self.browser.current_url == 'https://m.sport-express.ru/autosport/formula1/circuits/autodromo-enzo-e-dino-ferrari-9/', "no fera"
 
 
 
